@@ -242,7 +242,7 @@ function Page() {
                   />
                 </TimelineDot>
 
-                <TimelineConnector style={{ height: "80px" }} />
+                <TimelineConnector style={{ height: "100px" }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "5px", px: 2 }}>
                 <h3 className="company">Grupo Seven7 - Trainee</h3>
@@ -268,7 +268,7 @@ function Page() {
                   <LaptopIcon style={{color: '#202020'}}/>
                 </TimelineDot>
 
-                <TimelineConnector style={{ height: "80px" }} />
+                <TimelineConnector style={{ height: "100px" }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "5px", px: 2 }}>
                 <h3 className="company">Grupo Seven7 - Estágio</h3>
@@ -303,9 +303,9 @@ function Page() {
               </TimelineContent>
             </TimelineItem>
           </Timeline>
-          
         </div>
       </Section>
+      
     </div>
   );
 }
