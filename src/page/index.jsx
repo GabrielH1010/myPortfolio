@@ -159,13 +159,7 @@ function Page() {
       </Section>
 
       <Section id="Tools">
-        <div
-          class="containerTopic"
-          style={{
-            backgroundImage:
-              'url("https://c.pxhere.com/photos/d6/48/keyboard_mouse_work_computer_working-245.jpg!d")',
-          }}
-        >
+        <div class="containerTopic" style={{backgroundImage:'url("https://c.pxhere.com/photos/d6/48/keyboard_mouse_work_computer_working-245.jpg!d")'}}>
           <Topic>Tools</Topic>
           <Hr />
           <SubTopic>
@@ -309,19 +303,22 @@ function Page() {
 
 
       <Section id="About">
-        <div class="containerTopic" style={{ backgroundImage:'url("https://c.pxhere.com/photos/d6/48/keyboard_mouse_work_computer_working-245.jpg!d")', marginTop:'-10%'}}>
+        <div class="containerTopic" style={{ marginTop:'-10%'}}>
           <Topic>About</Topic>
           <Hr />
           <SubTopic>
-            Aqui são as ferramentas que tenho conhecimento e que uso em meus
-            projetos.
+            Nessa parte do meu Portfólio eu vou contar um pouco de como foi a minha trajetória até aqui e quais são os meus objetivos profissional.
           </SubTopic>
-            <Container>
-                  <img src={Profile} style={{width: '20%', borderRadius: '', marginTop: '50px', border: "3px solid #000"}}/>
+            <Container style={{marginTop: '5%'}}>
+              <div className="profile">
+                <img className="imageProfile" src={Profile} />
+              </div>
 
-            <div style={{width: '100%', height: '250px', background: "#000"}}>
-
-            </div>
+              <div className="aboutProfile">
+                <Title></Title>
+                  <Text>olá quejjfn qujfnjdf anfjddahfahf</Text>
+                  
+              </div>
         </Container>
         </div>
       </Section>

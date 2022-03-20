@@ -153,6 +153,20 @@ export const Container = styled.nav`
   justify-content: space-between;
   width: 90%;
 
+  .profile{
+    width: 50%;
+
+    .imageProfile{
+      width: 60%;
+      border: 3.5px solid ${backgroundColor};
+      border-radius: 50%;
+    }
+  }
+  .aboutProfile{
+    width: 50%;
+    background: ${backgroundColor};
+  }
+
   @media (max-width: 1080px) {
     width: 80%;
   }
