@@ -14,8 +14,8 @@ import {
   Hr,
   Skill,
 } from "./styles";
+import Profile from '../assets/perfil.jpg';
 import logotipo from "../assets/logotipo.png";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import LogoHtml from "../assets/logoHtml.svg";
 import Javascript from "../assets/logoJavascript.svg";
 import Css from "../assets/logoCss.svg";
@@ -30,6 +30,7 @@ import Lottie from "react-lottie";
 import { BiMenu } from "react-icons/bi";
 import { IconButton } from "@mui/material";
 
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -273,7 +274,7 @@ function Page() {
               <TimelineContent sx={{ py: "5px", px: 2 }}>
                 <h3 className="company">Grupo Seven7 - Estágio</h3>
                 <p className="acting">
-                  Atuo como desenvolvedor Front-end no projeto SplitRisk
+                  Atuava como QA garantindo a qualidade do produto realizando testes manuais.
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -298,14 +299,33 @@ function Page() {
               <TimelineContent sx={{ py: "5px", px: 2 }}>
                 <h3 className="company">Água Branca Distribuidoras de bebidas LTDA</h3>
                 <p className="acting">
-                  Atuo como desenvolvedor Front-end no projeto SplitRisk
+                Atuava no setor Fiscal da empresa, na emissão e lançamento de notas fiscais.
                 </p>
               </TimelineContent>
             </TimelineItem>
           </Timeline>
         </div>
       </Section>
-      
+
+
+      <Section id="About">
+        <div class="containerTopic" style={{ backgroundImage:'url("https://c.pxhere.com/photos/d6/48/keyboard_mouse_work_computer_working-245.jpg!d")', marginTop:'-10%'}}>
+          <Topic>About</Topic>
+          <Hr />
+          <SubTopic>
+            Aqui são as ferramentas que tenho conhecimento e que uso em meus
+            projetos.
+          </SubTopic>
+            <Container>
+                  <img src={Profile} style={{width: '20%', borderRadius: '', marginTop: '50px', border: "3px solid #000"}}/>
+
+            <div style={{width: '100%', height: '250px', background: "#000"}}>
+
+            </div>
+        </Container>
+        </div>
+      </Section>
+
     </div>
   );
 }
