@@ -13,6 +13,7 @@ import {
   SubTopic,
   Hr,
   Skill,
+  Footer
 } from "./styles";
 import Profile from '../assets/perfil.jpg';
 import logotipo from "../assets/logotipo.png";
@@ -126,6 +127,7 @@ function Page() {
         <Container>
           <Left>
             <ul>
+              <Title>Freelancer</Title>
               <Title>Desenvolvedor</Title>
               <Title>Quality Assurance</Title>
               <Text>
@@ -150,7 +152,7 @@ function Page() {
         </Container>
       </Section>
 
-      <Section id="Tools">
+      <Section id="Tools" className="toolsSection">
         <div class="containerTopic" style={{marginBottom: '-25px'}}>
           <Topic>Tools</Topic>
           <Hr />
@@ -200,6 +202,7 @@ function Page() {
             Minha trajetória profissional.
           </SubTopic>
 
+          <div className="historic">
           <Timeline position="alternate">
             <TimelineItem>
               <TimelineOppositeContent
@@ -226,7 +229,7 @@ function Page() {
                   />
                 </TimelineDot>
 
-                <TimelineConnector style={{ height: "90px" }} />
+                <TimelineConnector style={{ height: "90px" }}/>
               </TimelineSeparator>
               <TimelineContent sx={{ py: "5px", px: 2 }}>
                 <h3 className="company">Grupo Seven7 - Trainee</h3>
@@ -287,9 +290,9 @@ function Page() {
               </TimelineContent>
             </TimelineItem>
           </Timeline>
+          </div>
         </div>
       </Section>
-
 
       <Section id="About">
         <div class="containerTopic">
@@ -315,6 +318,8 @@ function Page() {
               </div>
         </div>
       </Section>
+
+      <Footer></Footer>
 
     </div>
   );

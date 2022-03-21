@@ -105,6 +105,8 @@ export const Section = styled.section`
   padding: 30px 0px;
   background-color: ${(props) => props.backgroundColor};
 
+  
+
   .description{
     background-color: #000;
     margin-left: 2%;
@@ -133,10 +135,10 @@ export const Section = styled.section`
     text-align: center;
     width: 85%;
     height: 115vh;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 0 0;
     background-image: ${(props) => props.backgroundImage};
-    border-radius: 3px;
-
+    border-radius: 3px; 
+    
     .company{
       margin: 0;
       font-size: 20px;
@@ -250,6 +252,20 @@ export const Right = styled.div`
   }
 `;
 
+export const Footer = styled.footer`
+  display: flex;
+  width: 100%;
+  height: 25vh;
+  background: black;
+  margin-top: -10%;
+
+  @media (max-width: 450px) {
+    margin-top: -55%;
+    }
+
+
+`
+
 export const Skill = styled.div`
   display: grid;
   grid-template-columns: 200px 200px 200px;
@@ -260,17 +276,15 @@ export const Skill = styled.div`
   @media (max-width: 831px) {
       grid-template-columns: 135px 135px 135px;
     }
+  @media (max-width: 450px) {
+      grid-template-columns: 200px 200px;
+    }
 
   .grid-item{
-    margin-top: 5%;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     padding-top: 5%;
-
-    @media (max-width: 800px) {
-    }
-
     
     :hover {
       background: #000;
