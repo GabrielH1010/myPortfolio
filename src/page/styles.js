@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primary, text, white, backgroundColor } from '../styles/colorProvider'
+import { primary, text, white } from '../styles/colorProvider'
 
 export const Header = styled.nav`
   display: flex;
@@ -27,8 +27,8 @@ export const Header = styled.nav`
     width: 50%;;
   }
   .navegation {
-    width: 30%;
-    padding-left: 10%;
+    width: 45%;
+    padding-left: 15%;
     display: flex;
     flex-direction: row;
   }
@@ -57,8 +57,9 @@ export const Header = styled.nav`
   p {
     text-decoration: none;
     color: ${white};
-    margin-right: 45px;
+    margin-right: 35px;
     display: flex;
+    font-size: 16px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -93,7 +94,7 @@ export const MobileMenu = styled.nav`
       right: 30px;
     }
   }
-`;
+`; 
 
 export const Section = styled.section`
   display: flex;
@@ -252,20 +253,6 @@ export const Right = styled.div`
   }
 `;
 
-export const Footer = styled.footer`
-  display: flex;
-  width: 100%;
-  height: 25vh;
-  background: black;
-  margin-top: -10%;
-
-  @media (max-width: 450px) {
-    margin-top: -55%;
-    }
-
-
-`
-
 export const Skill = styled.div`
   display: grid;
   grid-template-columns: 200px 200px 200px;
@@ -279,6 +266,11 @@ export const Skill = styled.div`
   @media (max-width: 450px) {
       grid-template-columns: 200px 200px;
     }
+
+    @media (max-width: 375px) {
+      grid-template-columns: 140px 140px;
+    }
+  }
 
   .grid-item{
     cursor: pointer;
@@ -318,39 +310,28 @@ export const DrawerBody = styled.div`
   align-items: center;
 
   img {
-    max-width: 135px;
-    margin-bottom: 30px;
+    max-width: 150px;
+    margin-bottom: 10%;
   }
-  a,p {
+
+  p{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20%;
+  }
+  a{
     display: flex;
     flex-direction: row;
     align-items: center;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
     transition: all ease-in-out 0.25s;
 
     &:hover {
       color: ${primary};
-    }
-  }
-
-  button{
-    width: 50%;
-    height: 35px;
-    background: ${primary};
-    border-radius: 5px;
-    border: none;
-    color: ${white};
-    font-size: 16px;
-    margin-top: 5%;
-    cursor: pointer;
-
-    :hover{
-      background: transparent;
-      border: 2.5px solid ${primary};
-      transition: all ease-in-out 0.25s;
     }
   }
 `;
@@ -418,3 +399,48 @@ export const Hr = styled.hr`
   margin-top:-20px;
   border: 3px solid ${white};
 `
+export const Footer = styled.footer`
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  background: black;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -10%;
+  position: absolute;
+
+  @media (max-width: 450px) {
+    margin-top: -55%;
+    }
+  @media (max-width: 450px) {
+    margin-top: -55%;
+    }
+
+  @media (max-width: 375px) {
+    margin-top: 0%;
+  }
+`
+
+export const LinkProfile = styled.div`
+  display: inline-block;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1%;
+  align-items: center;
+  text-align: center;
+
+  img{
+    width: 40px;
+    margin-left: 1%;
+    margin-right: 1%;
+    cursor: pointer;
+  }
+
+  .copyright{
+    font-size: 14px;
+    color: #888888;
+    font-weight: 300;
+  }
+;`

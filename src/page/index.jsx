@@ -1,20 +1,5 @@
 import React, { useState } from "react";
-import {
-  Header,
-  DrawerBody,
-  MobileMenu,
-  Container,
-  Section,
-  Left,
-  Right,
-  Title,
-  Text,
-  Topic,
-  SubTopic,
-  Hr,
-  Skill,
-  Footer
-} from "./styles";
+import { Header, DrawerBody, MobileMenu, Container, Section, LinkProfile, Left, Right, Title, Text, Topic, SubTopic, Hr, Skill, Footer} from "./styles";
 import Profile from '../assets/perfil.jpg';
 import logotipo from "../assets/logotipo.png";
 import LogoHtml from "../assets/logoHtml.svg";
@@ -25,6 +10,14 @@ import Git from "../assets/logoGit.svg";
 import Mui from "../assets/logoMui.png";
 import MySql from "../assets/logoMySql.png";
 import Figma from "../assets/logoFigma.svg";
+import GithubIcon from "../assets/githubIcon.svg";
+import WppIcon from "../assets/wppIcon.svg";
+import Lkn from "../assets/lknIcon.svg";
+import Gmail from "../assets/gmailIcon.svg";
+
+import { BsWhatsapp, BsLinkedin, BsGithub } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+
 import animationData from "../styles/animation.json";
 import loadingData from "../styles/loading.json";
 import Lottie from "react-lottie";
@@ -41,6 +34,7 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import LaptopIcon from "@mui/icons-material/LaptopMac";
 import LocalBarIcon from '@mui/icons-material/LocalBar';
+
 
 function Page() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -87,13 +81,15 @@ function Page() {
     >
       <DrawerBody>
         <img src={logotipo} alt="Logo Portifólio" />
-        <p onClick={() => scrollTo("home")}>Home</p>
-        <p onClick={() => scrollTo("skill")}>Skills</p>
-        <p onClick={() => scrollTo("work")}>Work Experience</p>
-        <button onClick={() => scrollTo("contact")}>Contact</button>
-      </DrawerBody>
+            <p >Mídias sociais</p>
+            <a href='https://www.linkedin.com/in/gabriel-henrique-de-oliveira-01436b1b4/' target="blank"><BsLinkedin style={{color: '#007BB5', marginRight: '20px'}}/>Linkedin</a>
+            <a href='https://github.com/GabrielH1010' target="blank"><BsGithub style={{color: '#fff', marginRight: '20px'}}/>GitHub</a>
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5534998985764" target="blank"><BsWhatsapp style={{color: '#61FD7D', marginRight: '20px'}}/>Whatsapp</a>
+            <a href="mailto:gabrielhdeoliveira17@gmail.com? " target="blank"><AiOutlineMail style={{color: '#F84437', marginRight: '20px'}}/>E-mail</a>
+        </DrawerBody>
     </SwipeableDrawer>
   );
+
   return (
     <div className="App">
       {renderDrawer()}
@@ -116,9 +112,10 @@ function Page() {
             <p onClick={() => scrollTo("Home")}>Home</p>
             <p onClick={() => scrollTo("Tools")}>Tools</p>
             <p onClick={() => scrollTo("WorkExperience")}>Work Experience</p>
+            <p onClick={() => scrollTo("About")}>About</p>
           </div>
           <div className="areaButton">
-            <button onClick={() => scrollTo("contact")}>Contact</button>
+            <button onClick={() => scrollTo("contact")}>Contacts</button>
           </div>
         </div>
       </Header>
@@ -137,7 +134,7 @@ function Page() {
               </Text>
             </ul>
             <button className="download" onClick={() => navTo("https://drive.google.com/file/d/12MMOM8KaRl631R1V9ogRZB0hkhFJLoHB/view")}>
-              Baixar currículo
+              Viualizar currículo
             </button>
           </Left>
 
@@ -319,7 +316,30 @@ function Page() {
         </div>
       </Section>
 
-      <Footer></Footer>
+      <Footer id="contact">
+        <Topic style={{marginTop: '50px'}}>contacts</Topic>
+        <Hr />
+        <LinkProfile>
+          <a href="https://github.com/GabrielH1010" target="blank">
+            <img src={GithubIcon}/>
+          </a>
+
+          <a href="https://www.linkedin.com/in/gabriel-henrique-de-oliveira-01436b1b4/" target="blank">
+              <img src={Lkn}/>
+          </a>
+
+          <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5534998985764" target="blank">
+              <img src={WppIcon}/>
+          </a>
+
+          <a href="mailto:gabrielhdeoliveira17@gmail.com? " target="blank">
+              <img src={Gmail}/>
+          </a>
+          <p class="copyright">&copy; Gabriel Henrique - 2022 | Desenvolvido por mim</p>
+
+        </LinkProfile>
+        <Text></Text>
+      </Footer>
 
     </div>
   );
