@@ -159,7 +159,7 @@ function Page() {
       </Section>
 
       <Section id="Tools">
-        <div class="containerTopic" style={{backgroundImage:'url("https://c.pxhere.com/photos/d6/48/keyboard_mouse_work_computer_working-245.jpg!d")'}}>
+        <div class="containerTopic" style={{marginBottom: '-25px'}}>
           <Topic>Tools</Topic>
           <Hr />
           <SubTopic>
@@ -203,7 +203,7 @@ function Page() {
         </div>
       </Section>
 
-      <Section id="WorkExperience">
+      <Section id="WorkExperience" style={{backgroundColor: '#000', height: '110vh'}}>
         <div class="containerTopic">
           <Topic>Work Experience</Topic>
           <Hr />
@@ -237,7 +237,7 @@ function Page() {
                   />
                 </TimelineDot>
 
-                <TimelineConnector style={{ height: "100px" }} />
+                <TimelineConnector style={{ height: "90px" }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "5px", px: 2 }}>
                 <h3 className="company">Grupo Seven7 - Trainee</h3>
@@ -263,12 +263,12 @@ function Page() {
                   <LaptopIcon style={{color: '#202020'}}/>
                 </TimelineDot>
 
-                <TimelineConnector style={{ height: "100px" }} />
+                <TimelineConnector style={{ height: "90px" }} />
               </TimelineSeparator>
               <TimelineContent sx={{ py: "5px", px: 2 }}>
                 <h3 className="company">Grupo Seven7 - Estágio</h3>
                 <p className="acting">
-                  Atuava como QA garantindo a qualidade do produto realizando testes manuais.
+                  Atuava como QA garantindo a qualidade do produto realizando testes.
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -291,9 +291,9 @@ function Page() {
 
               </TimelineSeparator>
               <TimelineContent sx={{ py: "5px", px: 2 }}>
-                <h3 className="company">Água Branca Distribuidoras de bebidas LTDA</h3>
+                <h3 className="company">Água Branca Distribuidoras de bebidas</h3>
                 <p className="acting">
-                Atuava no setor Fiscal da empresa, na emissão e lançamento de notas fiscais.
+                Atuava no setor Fiscal na emissão e lançamento de notas fiscais.
                 </p>
               </TimelineContent>
             </TimelineItem>
@@ -303,23 +303,31 @@ function Page() {
 
 
       <Section id="About">
-        <div class="containerTopic" style={{ marginTop:'-10%'}}>
+        <div class="containerTopic">
           <Topic>About</Topic>
           <Hr />
           <SubTopic>
             Nessa parte do meu Portfólio eu vou contar um pouco de como foi a minha trajetória até aqui e quais são os meus objetivos profissional.
           </SubTopic>
-            <Container style={{marginTop: '5%'}}>
               <div className="profile">
                 <img className="imageProfile" src={Profile} />
+                  <div className="description" style={{backgroundColor: "#000"}}>
+                    <h3>"Meu nome é Gabriel sou desenvolvedor Front-end. Tenho contato com a tecnologia desde os meus 12 anos. Meu primeiro computador 
+                      me despertou a curiosidade de como tudo aquilo funcionava desde então comecei a 
+                      desmontar, entender as peças e montar novamente.
+                    </h3>
+                    <h3></h3>
+                    <h3>
+                    Quando terminei o ensino médio consegui bolsa na faculdade e iniciei 
+                      o curso de Análise e Desenvolvimento de Sistemas, não satisfeito somente com as matérias da faculdade fiz alguns 
+                      cursos por fora e iniciei minha carreira na área de TI como Quality Assurance e posteriormente comecei a estudar sobre Front-end, que é a área que atuo atualmente.
+                     Continuo estudando e sigo disposto a aprimorar meus conhecimentos sobre Front-end e também conhecer e aprender novas áreas da tecnologia.
+                    </h3>
+                    <h3>
+                     Um dos meus objetivos como profissional é poder me especializar em Fron-end e poder repassar todo o meu conhecimento sobre a área para as pessoas que querem entrar na área mas não tem condição de pagar um curso ou até mesmo indeciso ou com medo de entrar na área assim como eu tinha no meu ínicio."
+                    </h3>
+                  </div>
               </div>
-
-              <div className="aboutProfile">
-                <Title></Title>
-                  <Text>olá quejjfn qujfnjdf anfjddahfahf</Text>
-                  
-              </div>
-        </Container>
         </div>
       </Section>
 

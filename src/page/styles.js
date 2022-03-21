@@ -105,6 +105,28 @@ export const Section = styled.section`
   padding: 30px 0px;
   background-color: ${(props) => props.backgroundColor};
 
+  .description{
+    background-color: #000;
+    margin-left: 2%;
+    align-items: center;
+    padding: 2%;
+    border-radius: 10px;
+
+    h3{
+      font-size: 18px;
+      text-align: left;
+      margin-left: 10px;
+      font-weight: 300;
+      color: #959595;
+      line-height: 20px;
+    }
+
+    @media (max-width: 800px) {
+      width: 80%;
+      margin: 0;
+    }
+  }
+
   .containerTopic{
     display: flex;
     flex-direction: column;
@@ -138,14 +160,34 @@ export const Section = styled.section`
         font-size: 14px;
       }
     }
+    
+    .profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    img{
+      float: left;
+      width: 25%;
+      border-radius: 50%;
+
+        @media (max-width: 800px) {
+        display: none;
+      }
+    }
+    @media (max-width: 800px) {
+      justify-content: center;
+      align-items: center;
+    }
+    }
 
     @media (max-width: 800px) {
       width: 100%;
-      height: 105vh;
+      height: 115vh;
     }
   }
   `
-
 export const Container = styled.nav`
   display: flex;
   flex-direction: row;
@@ -153,20 +195,7 @@ export const Container = styled.nav`
   justify-content: space-between;
   width: 90%;
 
-  .profile{
-    width: 50%;
-
-    .imageProfile{
-      width: 60%;
-      border: 3.5px solid ${backgroundColor};
-      border-radius: 50%;
-    }
-  }
-  .aboutProfile{
-    width: 50%;
-    background: ${backgroundColor};
-  }
-
+  
   @media (max-width: 1080px) {
     width: 80%;
   }
@@ -243,7 +272,7 @@ export const Skill = styled.div`
 
     
     :hover {
-      background: ${backgroundColor};
+      background: #000;
       border-radius: 3px;
       
       h1{
