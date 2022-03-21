@@ -106,8 +106,6 @@ export const Section = styled.section`
   padding: 30px 0px;
   background-color: ${(props) => props.backgroundColor};
 
-  
-
   .description{
     background-color: #000;
     margin-left: 2%;
@@ -198,7 +196,6 @@ export const Container = styled.nav`
   justify-content: space-between;
   width: 90%;
 
-  
   @media (max-width: 1080px) {
     width: 80%;
   }
@@ -220,8 +217,7 @@ export const Left = styled.div`
     border: none;
     color: ${white};
     font-size: 18px;
-    margin-top: 10px;
-    margin-right: 8%;
+    margin: 10px 8% 0 0; 
     cursor: pointer;
 
     :hover{

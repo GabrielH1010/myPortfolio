@@ -35,7 +35,6 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import LaptopIcon from "@mui/icons-material/LaptopMac";
 import LocalBarIcon from '@mui/icons-material/LocalBar';
 
-
 function Page() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
