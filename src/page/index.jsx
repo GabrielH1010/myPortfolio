@@ -126,23 +126,15 @@ function Page() {
         <Container>
           <Left>
             <ul>
-              <Title>freelancer</Title>
-              <Title>Developer web</Title>
+              <Title>Desenvolvedor</Title>
               <Title>Quality Assurance</Title>
               <Text>
-                Um desenvolvedor web é alguém que é capaz de projetar, criar e
-                manter sites e aplicativos web a partir de um design de
-                interface web e isso sei fazer muito bem.
+                Um desenvolvedor Front-end projeta, cria e
+                mantém sites e aplicativos web a partir de um design de
+                interface.
               </Text>
             </ul>
-            <button
-              className="download"
-              onClick={() =>
-                navTo(
-                  "https://drive.google.com/file/d/12MMOM8KaRl631R1V9ogRZB0hkhFJLoHB/view"
-                )
-              }
-            >
+            <button className="download" onClick={() => navTo("https://drive.google.com/file/d/12MMOM8KaRl631R1V9ogRZB0hkhFJLoHB/view")}>
               Baixar currículo
             </button>
           </Left>
@@ -162,10 +154,7 @@ function Page() {
         <div class="containerTopic" style={{marginBottom: '-25px'}}>
           <Topic>Tools</Topic>
           <Hr />
-          <SubTopic>
-            Aqui são as ferramentas que tenho conhecimento e que uso em meus
-            projetos.
-          </SubTopic>
+          <SubTopic>Ferramentas que tenho conhecimento e utilizo em meus projetos.</SubTopic>
           <Skill>
             <div class="grid-item">
               <img src={LogoHtml} alt="" />
@@ -208,7 +197,7 @@ function Page() {
           <Topic>Work Experience</Topic>
           <Hr />
           <SubTopic>
-            Aqui vou falar um pouco sobre a minha trajetória como profissional.
+            Minha trajetória profissional.
           </SubTopic>
 
           <Timeline position="alternate">
@@ -307,24 +296,20 @@ function Page() {
           <Topic>About</Topic>
           <Hr />
           <SubTopic>
-            Nessa parte do meu Portfólio eu vou contar um pouco de como foi a minha trajetória até aqui e quais são os meus objetivos profissional.
+            Um pouco mais sobre minha trajetória até aqui e meus objetivos profissionais.
           </SubTopic>
               <div className="profile">
                 <img className="imageProfile" src={Profile} />
                   <div className="description" style={{backgroundColor: "#000"}}>
-                    <h3>"Meu nome é Gabriel sou desenvolvedor Front-end. Tenho contato com a tecnologia desde os meus 12 anos. Meu primeiro computador 
-                      me despertou a curiosidade de como tudo aquilo funcionava desde então comecei a 
-                      desmontar, entender as peças e montar novamente.
+                    <h3>"Meu nome é Gabriel e sou desenvolvedor Front-end. Tenho contato com a tecnologia desde os meus 12 anos. Meu primeiro computador 
+                      me despertou a curiosidade de como tudo aquilo funcionava, desde então comecei a 
+                      desmontar, entender as peças e montar novamente o computador.
                     </h3>
-                    <h3></h3>
                     <h3>
                     Quando terminei o ensino médio consegui bolsa na faculdade e iniciei 
                       o curso de Análise e Desenvolvimento de Sistemas, não satisfeito somente com as matérias da faculdade fiz alguns 
-                      cursos por fora e iniciei minha carreira na área de TI como Quality Assurance e posteriormente comecei a estudar sobre Front-end, que é a área que atuo atualmente.
-                     Continuo estudando e sigo disposto a aprimorar meus conhecimentos sobre Front-end e também conhecer e aprender novas áreas da tecnologia.
-                    </h3>
-                    <h3>
-                     Um dos meus objetivos como profissional é poder me especializar em Fron-end e poder repassar todo o meu conhecimento sobre a área para as pessoas que querem entrar na área mas não tem condição de pagar um curso ou até mesmo indeciso ou com medo de entrar na área assim como eu tinha no meu ínicio."
+                      cursos por fora e iniciei minha carreira na área de TI como Quality Assurance e posteriormente comecei a estudar Front-end, que é a área que atuo.
+                     Continuo aprimorando meus conhecimentos atuais e disposto a aprender novas tecnologias, para assim, um dia poder repassar os meus conhecimentos.
                     </h3>
                   </div>
               </div>

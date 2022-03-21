@@ -217,6 +217,7 @@ export const Left = styled.div`
     border: none;
     color: ${white};
     font-size: 18px;
+    margin-top: 10px;
     margin-right: 8%;
     cursor: pointer;
 
