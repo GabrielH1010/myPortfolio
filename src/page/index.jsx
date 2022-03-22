@@ -114,7 +114,7 @@ function Page() {
             <p onClick={() => scrollTo("About")}>About</p>
           </div>
           <div className="areaButton">
-            <button onClick={() => scrollTo("contact")}>Contacts</button>
+            <button onClick={() => navTo("http://api.whatsapp.com/send?1=pt_BR&phone=5534998985764")}>Contacts</button>
           </div>
         </div>
       </Header>
@@ -133,7 +133,7 @@ function Page() {
               </Text>
             </ul>
             <button className="download" onClick={() => navTo("https://drive.google.com/file/d/12MMOM8KaRl631R1V9ogRZB0hkhFJLoHB/view")}>
-              Viualizar currículo
+              Visualizar currículo
             </button>
           </Left>
 
