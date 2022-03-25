@@ -132,7 +132,7 @@ function Page() {
                 interface.
               </Text>
             </ul>
-            <button className="download" onClick={() => navTo("https://drive.google.com/file/d/149ljDcLqjxGRWrzwgEFFzRvOtgpPYkA8/view")}>
+            <button className="download" onClick={() => navTo("https://drive.google.com/file/d/149ljDcLqjxGRWrzwgEFFzRvOtgpPYkA8/view?usp=sharing")}>
               Visualizar currículo
             </button>
           </Left>
