@@ -190,7 +190,7 @@ function Page() {
         </div>
       </Section>
 
-      <Section id="WorkExperience" style={{backgroundColor: '#000', height: '110vh'}}>
+      <Section id="WorkExperience" style={{backgroundColor: '#000', height: '105vh'}} >
         <div class="containerTopic">
           <Topic>Work Experience</Topic>
           <Hr />

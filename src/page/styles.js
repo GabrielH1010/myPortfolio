@@ -136,7 +136,7 @@ export const Section = styled.section`
     height: 115vh;
     margin: 15px 0 0 0;
     background-image: ${(props) => props.backgroundImage};
-    border-radius: 3px; 
+    border-radius: 3px;
     
     .company{
       margin: 0;
@@ -186,6 +186,11 @@ export const Section = styled.section`
     @media (max-width: 800px) {
       width: 100%;
       height: 115vh;
+    }
+
+    @media (max-width: 450px) {
+      width: 100%;
+      height: 110vh;
     }
   }
   `
@@ -429,9 +434,12 @@ export const LinkProfile = styled.div`
 
   img{
     width: 40px;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: 0 2% 0 2%;
     cursor: pointer;
+
+    @media (max-width: 600px) {
+    margin: 5% 3% 3% 3%;
+    }
   }
 
   .copyright{
