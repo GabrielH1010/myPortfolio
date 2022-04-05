@@ -412,7 +412,7 @@ export const Footer = styled.footer`
   position: absolute;
 
   @media (max-width: 450px) {
-    margin-top: -46%;
+    margin-top: -40%;
     }
 
   @media (max-width: 375px) {
