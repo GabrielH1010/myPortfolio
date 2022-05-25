@@ -271,7 +271,6 @@ export const Skill = styled.div`
     @media (max-width: 375px) {
       grid-template-columns: 140px 140px;
     }
-  }
 
   .grid-item{
     cursor: pointer;
