@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { backgroundColor, white } from './colorProvider';
+import { backgroundColor, midleGray, primary, white } from './colorProvider';
 
 export const GlobalStyle = createGlobalStyle`
   html{
@@ -18,6 +18,17 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${backgroundColor};
     color: ${white};
     max-width: 100% !important;
+    
+    ::-webkit-scrollbar {
+      width: 12px;               
+    }
+    ::-webkit-scrollbar-track {
+      background: ${midleGray};
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: ${backgroundColor}; 
+      border: 2px solid ${primary};        
+      border-radius: 50px;       
+    }
   }
-
 `;
