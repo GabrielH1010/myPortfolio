@@ -35,7 +35,7 @@ export const Left = styled.div`
     }
 
     @media (max-width: 600px) {
-      font-size: 35px;
+      font-size: 30px;
       line-height: 35px;
     }
   }
@@ -75,8 +75,8 @@ export const Left = styled.div`
     }
   }
 
-  @media (max-width: 1080px) {
-    width: 100%;
+  @media (max-width: 1000px) {
+    width: 98%;
   }
 `;
 
