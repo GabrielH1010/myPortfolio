@@ -21,12 +21,12 @@ margin-bottom: 25px;
   }
   
 @media (max-width: 450px) {
-    grid-template-columns: 170px 170px;
+    grid-template-columns: 150px 150px;
     gap: 10px;
   }
 
   @media (max-width: 380px) {
-    grid-template-columns: 140px 140px;
+    grid-template-columns: 135px 135px;
     gap: 20px;
   }
 

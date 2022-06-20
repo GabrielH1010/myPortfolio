@@ -161,6 +161,7 @@ export const Hr = styled.hr`
   border: 2px solid ${white};
 `
 export const Subtitle = styled.h3`
+  width: 100%;
   font-size: 20px;
   color: #5f5f5f;
   font-weight: 500;
