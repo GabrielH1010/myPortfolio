@@ -76,13 +76,16 @@ export const ContainerArea = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 1px 10px ${primary};
 
   img{
       width: 70px;
       height: 70px;
-      margin-right: 55px;
+      margin-right: 50px;
       cursor: pointer;
+
+      @media (max-width: 900px){
+        margin-right: 35px;
+    }
   }
 `
 
