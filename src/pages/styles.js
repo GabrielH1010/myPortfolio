@@ -37,6 +37,7 @@ export const Left = styled.div`
     @media (max-width: 600px) {
       font-size: 30px;
       line-height: 35px;
+      margin-left: -15px;
     }
   }
 
@@ -45,10 +46,12 @@ export const Left = styled.div`
     color: ${white};
     font-weight: 500;
     padding-right: 25px;
+    line-height: 25px;
 
     @media (max-width: 600px) {
       font-size: 20px;
       margin-bottom: 100px;
+      margin-left: -15px;
     }
   }
 
