@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { backgroundColor, primary } from 'styles/colorProvider';
+import { backgroundColor, black, primary } from 'styles/colorProvider';
 
 export const Container = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const ContentArea = styled.div`
     justify-content: center;
     margin: 25px 30px 25px 0px;
     padding: 25px 0;
-    border:  2.5px solid black;
+    border:  3px solid ${black};
     border-radius: 5px;
 
     h2{
