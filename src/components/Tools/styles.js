@@ -21,13 +21,13 @@ margin-bottom: 25px;
   }
   
 @media (max-width: 450px) {
-    grid-template-columns: 200px 200px;
-    gap: 10px 15px;
+    grid-template-columns: 170px 170px;
+    gap: 10px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 380px) {
     grid-template-columns: 140px 140px;
-    gap: 10px 15px;
+    gap: 20px;
   }
 
 .grid-item{
