@@ -12,6 +12,16 @@ export const DrawerBody = styled.div`
   overflow: auto;
 `;
 
+export const HeaderArea = styled.div`
+  display: flex;
+  margin-left: 15px; 
+  
+  @media (max-width: 600px) {
+    display: none;
+  }
+
+`
+
 export const Container = styled.div`
   display: flex;
   width: 100%;
@@ -70,7 +80,7 @@ export const Container = styled.div`
 export const ContainerArea = styled.header`
     display: flex;
     height: 12vh;
-    width: 100vw;
+    width: 100%;
     background: #010101;
     position: static;
     flex-direction: row;
@@ -84,7 +94,7 @@ export const ContainerArea = styled.header`
       cursor: pointer;
 
       @media (max-width: 900px){
-        margin-right: 35px;
+        margin-left: 25px;
     }
   }
 `

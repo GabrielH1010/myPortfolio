@@ -160,17 +160,17 @@ export const Hr = styled.hr`
   margin-top: -10px;
   border: 2px solid ${white};
 `
-export const Subtitle = styled.h3`
+export const Subtitle = styled.p`
   width: 100%;
   font-size: 20px;
   color: #5f5f5f;
   font-weight: 500;
   font-style: italic;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
   
   
   @media (max-width: 800px) {
-    padding: 10px;
+    width: 95%;
   }
 
 `

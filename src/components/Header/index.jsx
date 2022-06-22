@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from "@mui/icons-material/Menu";
 import Drawer from "@mui/material/Drawer";
-import { DrawerBody, Container, Bottom, ContainerArea } from "./styles";
+import {
+  DrawerBody,
+  Container,
+  Bottom,
+  ContainerArea,
+  HeaderArea,
+} from "./styles";
 import Fade from "react-reveal/Fade";
 import tag from "assets/tag.svg";
 import { primary, white } from "styles/colorProvider";
@@ -64,7 +69,7 @@ function Header() {
 
   return (
     <ContainerArea>
-      <Toolbar>
+      <HeaderArea>
         {["top"].map((anchor) => (
           <React.Fragment key={anchor}>
             <MenuIcon
@@ -83,7 +88,7 @@ function Header() {
             </Drawer>
           </React.Fragment>
         ))}
-      </Toolbar>
+      </HeaderArea>
       <img
         src={logo}
         alt="Logotipo formado por um circulo grande de fundo no tom de azul claro e sobrepondo ele uma escrita com fonte maior TI em branco e abaixo dessa logo tem o meu nome Gabriel Henrique"
