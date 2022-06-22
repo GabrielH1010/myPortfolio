@@ -170,6 +170,7 @@ export const Subtitle = styled.p`
   
   
   @media (max-width: 800px) {
+    margin: 0 0 25px 10px;
     width: 95%;
   }
 
