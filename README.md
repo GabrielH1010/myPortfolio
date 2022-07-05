@@ -19,7 +19,7 @@ Esse projeto foi pensado para ser acessado não só pelo desktop mas também par
 ![Portifólio-Google-Chrome-2022-03-28-14-05-29](https://user-images.githubusercontent.com/92988574/160450839-75825142-5247-4750-a0f2-33454849e35a.gif)
 ---
 ### Site 🚀 
-Caso você tenha interesse de visitar e saber mais sobre esse projeto, basta acessar o link https://myportifolio-home.vercel.app.
+<p>Caso você tenha interesse de visitar e saber mais sobre esse projeto, <a href="https://myportifolio-home.vercel.app" target="_blank">acesse aqui</a>.
 
 ### Inicializar o projeto 🚀
 
